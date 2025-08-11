@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Layout>
+  <Window Guid="4a3bcfd3-d4b0-44a0-bac0-bfd030fbc69b" FloatingSize="250, 400" FloatingLocation="-1, -1" Docked="1" PopupSize="0" DockedSize="250" />
+  <Window Guid="ad8a4d52-f3ba-4463-9ce3-4cbed143ec05" FloatingSize="250, 400" FloatingLocation="-1, -1" Docked="1" PopupSize="0" DockedSize="250" />
+  <Window Guid="3b44d7d6-f472-4373-9bac-a5d4cc471425" FloatingSize="250, 400" FloatingLocation="-1, -1" Docked="1" PopupSize="0" DockedSize="250" />
+  <Container Dock="4" ContentSize="250">
+    <SplitLayoutSystem WorkingSize="250, 584" SplitMode="0">
+      <ControlLayoutSystem WorkingSize="250, 413" Collapsed="0" SelectedControl="3b44d7d6-f472-4373-9bac-a5d4cc471425">
+        <Controls>
+          <Control Guid="3b44d7d6-f472-4373-9bac-a5d4cc471425" />
+          <Control Guid="ad8a4d52-f3ba-4463-9ce3-4cbed143ec05" />
+        </Controls>
+      </ControlLayoutSystem>
+      <ControlLayoutSystem WorkingSize="250, 166" Collapsed="0" SelectedControl="4a3bcfd3-d4b0-44a0-bac0-bfd030fbc69b">
+        <Controls>
+          <Control Guid="4a3bcfd3-d4b0-44a0-bac0-bfd030fbc69b" />
+        </Controls>
+      </ControlLayoutSystem>
+    </SplitLayoutSystem>
+  </Container>
+</Layout>

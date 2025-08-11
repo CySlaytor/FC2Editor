@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Layout>
+  <Toolbar Guid="67d4f929-8914-4b23-9c2d-b9539a54dd9b" DockLine="1" DockOffset="0" Visible="True" Container="9d4d899c-2f1c-48a5-b6b3-c2965fee85b0" />
+  <Toolbar Guid="472238c1-4ade-4ff2-ba4f-4429ed30f50f" DockLine="54" DockOffset="-7" Visible="True" Container="9d4d899c-2f1c-48a5-b6b3-c2965fee85b0" />
+  <Toolbar Guid="69635d21-0000-0000-0000-000000000000" DockLine="54" DockOffset="134" Visible="True" Container="9d4d899c-2f1c-48a5-b6b3-c2965fee85b0" />
+  <Toolbar Guid="aadef40d-0000-0000-0000-000000000000" DockLine="54" DockOffset="415" Visible="True" Container="9d4d899c-2f1c-48a5-b6b3-c2965fee85b0" />
+  <Toolbar Guid="27de04e6-0000-0000-0000-000000000000" DockLine="54" DockOffset="566" Visible="True" Container="9d4d899c-2f1c-48a5-b6b3-c2965fee85b0" />
+</Layout>

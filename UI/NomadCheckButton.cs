@@ -1,0 +1,94 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Windows.Forms;
+
+namespace FC2Editor.UI
+{
+    internal class NomadCheckButton : CheckBox
+    {
+        private bool mouseOver;
+        private bool pushed;
+
+        public NomadCheckButton()
+        {
+            ButtonShader.InitShaders();
+        }
+
+        protected override void OnMouseEnter(EventArgs e)
+        {
+            base.OnMouseEnter(e);
+            mouseOver = true;
+            Refresh();
+        }
+
+        protected override void OnMouseLeave(EventArgs e)
+        {
+            base.OnMouseLeave(e);
+            mouseOver = false;
+            Refresh();
+        }
+
+        protected override void OnMouseDown(MouseEventArgs mevent)
+        {
+            base.OnMouseDown(mevent);
+            pushed = true;
+            Refresh();
+        }
+
+        protected override void OnMouseUp(MouseEventArgs mevent)
+        {
+            base.OnMouseUp(mevent);
+            pushed = false;
+            Refresh();
+        }
+
+        protected override void OnPaint(PaintEventArgs pevent)
+        {
+            Graphics graphics = pevent.Graphics;
+            ButtonShader buttonShader = ButtonShader.normalShader;
+
+            if (base.Checked)
+            {
+                buttonShader = ButtonShader.checkShader;
+            }
+            else if (mouseOver)
+            {
+                buttonShader = ButtonShader.hoverShader;
+            }
+
+            if (pushed)
+            {
+                buttonShader = ButtonShader.pushShader;
+            }
+
+            if (!base.Enabled)
+            {
+                buttonShader = ButtonShader.disableShader;
+            }
+
+            Rectangle clientRectangle = base.ClientRectangle;
+            using (Pen pen = new Pen(BackColor))
+            {
+                graphics.DrawRectangle(pen, clientRectangle.X, clientRectangle.Y, clientRectangle.Width - 1, clientRectangle.Height - 1);
+            }
+            clientRectangle.Inflate(-1, -1);
+            buttonShader.DrawButton(graphics, clientRectangle, BackColor);
+
+            if (base.Image != null)
+            {
+                ImageAttributes imageAttributes = new ImageAttributes();
+                if (!base.Enabled)
+                {
+                    imageAttributes.SetColorMatrix(NomadButton.disableMatrix);
+                }
+                graphics.DrawImage(base.Image, new Rectangle(clientRectangle.X + (clientRectangle.Width - base.Image.Width) / 2, clientRectangle.Y + (clientRectangle.Height - base.Image.Height) / 2, base.Image.Width, base.Image.Height), 0, 0, base.Image.Width, base.Image.Height, GraphicsUnit.Pixel, imageAttributes);
+            }
+            else
+            {
+                Rectangle rect = clientRectangle;
+                buttonShader.DrawText(graphics, rect, Text, Font, ForeColor);
+            }
+        }
+    }
+}

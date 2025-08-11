@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7068D60-3EA5-4D0B-BE59-59B89D552F38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FC2Editor</RootNamespace>
+    <AssemblyName>FC2Editor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <ApplicationIcon>appIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Games\Far Cry 2\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SandBar, Version=1.4.2.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>GameDLLs\SandBar.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock, Version=2.4.3.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>GameDLLs\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Nomad\AABB.cs" />
+    <Compile Include="Core\Nomad\Binding.cs" />
+    <Compile Include="Core\Nomad\BudgetManager.cs" />
+    <Compile Include="Core\Nomad\Camera.cs" />
+    <Compile Include="Core\Nomad\CollectionInventory.cs" />
+    <Compile Include="Core\Nomad\CollectionManager.cs" />
+    <Compile Include="Core\Nomad\CollectionManipulator.cs" />
+    <Compile Include="Core\Nomad\CoordinateSystem.cs" />
+    <Compile Include="Core\Nomad\Editor.cs" />
+    <Compile Include="Core\Nomad\EditorDocument.cs" />
+    <Compile Include="Core\Nomad\EditorEvent.cs" />
+    <Compile Include="Core\Nomad\EditorEventUndo.cs" />
+    <Compile Include="Core\Nomad\EditorObject.cs" />
+    <Compile Include="Core\Nomad\EditorObjectPivot.cs" />
+    <Compile Include="Core\Nomad\EditorObjectSelection.cs" />
+    <Compile Include="Core\Nomad\EditorSettings.cs" />
+    <Compile Include="Core\Nomad\Engine.cs" />
+    <Compile Include="Core\Nomad\Enums.cs" />
+    <Compile Include="Core\Nomad\Gizmo.cs" />
+    <Compile Include="Core\Nomad\GizmoHelper.cs" />
+    <Compile Include="Core\Nomad\IInputSink.cs" />
+    <Compile Include="Core\Nomad\ImageMap.cs" />
+    <Compile Include="Core\Nomad\ImageMapEngine.cs" />
+    <Compile Include="Core\Nomad\InputBase.cs" />
+    <Compile Include="Core\Nomad\Inventory.cs" />
+    <Compile Include="Core\Nomad\Localizer.cs" />
+    <Compile Include="Core\Nomad\ObjectInventory.cs" />
+    <Compile Include="Core\Nomad\ObjectManager.cs" />
+    <Compile Include="Core\Nomad\ObjectRenderer.cs" />
+    <Compile Include="Core\Nomad\ObjectViewer.cs" />
+    <Compile Include="Core\Nomad\PaintBrush.cs" />
+    <Compile Include="Core\Nomad\PhysEntityVector.cs" />
+    <Compile Include="Core\Nomad\Plane.cs" />
+    <Compile Include="Core\Nomad\Points.cs" />
+    <Compile Include="Core\Nomad\Render.cs" />
+    <Compile Include="Core\Nomad\Snapshot.cs" />
+    <Compile Include="Core\Nomad\Spline.cs" />
+    <Compile Include="Core\Nomad\SplineController.cs" />
+    <Compile Include="Core\Nomad\SplineInventory.cs" />
+    <Compile Include="Core\Nomad\SplineManager.cs" />
+    <Compile Include="Core\Nomad\SplineRoad.cs" />
+    <Compile Include="Core\Nomad\SplineZone.cs" />
+    <Compile Include="Core\Nomad\TerrainManager.cs" />
+    <Compile Include="Core\Nomad\TerrainManipulator.cs" />
+    <Compile Include="Core\Nomad\TextureInventory.cs" />
+    <Compile Include="Core\Nomad\TextureManipulator.cs" />
+    <Compile Include="Core\Nomad\UndoManager.cs" />
+    <Compile Include="Core\Nomad\Validation.cs" />
+    <Compile Include="Core\Nomad\ValidationRecord.cs" />
+    <Compile Include="Core\Nomad\ValidationReport.cs" />
+    <Compile Include="Core\Nomad\Vec2.cs" />
+    <Compile Include="Core\Nomad\Vec3.cs" />
+    <Compile Include="Core\Nomad\Wilderness.cs" />
+    <Compile Include="Core\Nomad\WildernessInventory.cs" />
+    <Compile Include="Core\Win32.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameters\IParameter.cs" />
+    <Compile Include="Parameters\IParameterProvider.cs" />
+    <Compile Include="Parameters\IParameterProviderDynamic.cs" />
+    <Compile Include="Parameters\ParamBool.cs" />
+    <Compile Include="Parameters\ParamButton.cs" />
+    <Compile Include="Parameters\ParamEnum.cs" />
+    <Compile Include="Parameters\Parameter.cs" />
+    <Compile Include="Parameters\ParamFloat.cs" />
+    <Compile Include="Parameters\ParamPickButton.cs" />
+    <Compile Include="Parameters\ParamString.cs" />
+    <Compile Include="Parameters\ParamText.cs" />
+    <Compile Include="Parameters\ParamVector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\ParamCollection.cs" />
+    <Compile Include="Tools\ParamTime.cs" />
+    <Compile Include="Tools\ToolObject.cs" />
+    <Compile Include="Tools\IContextHelpDynamic.cs" />
+    <Compile Include="Tools\ITool.cs" />
+    <Compile Include="Tools\IToolAction.cs" />
+    <Compile Include="Tools\IToolBase.cs" />
+    <Compile Include="Tools\ToolCollection.cs" />
+    <Compile Include="Tools\ToolEnvironment.cs" />
+    <Compile Include="Tools\ToolFinalize.cs" />
+    <Compile Include="Tools\ToolPaint.cs" />
+    <Compile Include="Tools\ToolPlayableZone.cs" />
+    <Compile Include="Tools\ToolProperties.cs" />
+    <Compile Include="Tools\ToolRoad.cs" />
+    <Compile Include="Tools\ToolSpline.cs" />
+    <Compile Include="Tools\ToolTerrainBump.cs" />
+    <Compile Include="Tools\ToolTerrainErosion.cs" />
+    <Compile Include="Tools\ToolTerrainNoise.cs" />
+    <Compile Include="Tools\ToolTerrainRaiseLower.cs" />
+    <Compile Include="Tools\ToolTerrainRamp.cs" />
+    <Compile Include="Tools\ToolTerrainSetHeight.cs" />
+    <Compile Include="Tools\ToolTerrainSmooth.cs" />
+    <Compile Include="Tools\ToolTerrainTerrace.cs" />
+    <Compile Include="Tools\ToolTexture.cs" />
+    <Compile Include="Tools\ToolValidation.cs" />
+    <Compile Include="UI\ButtonShader.cs" />
+    <Compile Include="UI\CodeDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CodeHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CodeMapViewerDock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ContextHelpDock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\EditorSettingsDock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\IndentedComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\InventoryTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\NomadButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\NomadCheckButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\NomadCodeBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\NomadRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\NomadSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\NomadTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ParamCollectionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamEnumButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamEnumCombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParametersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamNumberSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamObjectInventoryTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamSnapshot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamSplineList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamStringField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamTextureList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamVectorEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PromptInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ToolParametersDock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ViewportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ColorUtils.cs" />
+    <Compile Include="Utils\MathUtils.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="appIcon.ico" />
+    <Content Include="GameDLLs\binkw32.dll">
+      <Link>binkw32.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GameDLLs\Dunia.dll">
+      <Link>Dunia.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GameDLLs\eax.dll">
+      <Link>eax.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GameDLLs\systemdetection.dll">
+      <Link>systemdetection.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

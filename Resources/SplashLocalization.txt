@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-16"?>
+<IGESplashLoc>
+	<english>
+		<string enum="LOADING_GAMEFILE" value="Loading..." />
+		<string enum="EDITOR_NAME" value="Far Cry® 2 Map Editor" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. All Rights Reserved. Far Cry®, Ubisoft and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries. Based on Crytek's original Far Cry® directed by Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Loading Far Cry® 2 Map Editor..." />	
+	</english>
+	<french>
+		<string enum="LOADING_GAMEFILE" value="Chargement..." />
+		<string enum="EDITOR_NAME" value="Far Cry® 2 Éditeur de cartes" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Tous droits réservés. Far Cry®, Ubisoft et le logo Ubisoft sont des marques commerciales aux États-Unis et/ou dans d'autres pays. Basé sur le jeu original Far Cry® de Crytek dirigé par Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Chargement de l'Éditeur de cartes de Far Cry® 2..." />	
+	</french>
+	<czech>
+		<string enum="LOADING_GAMEFILE" value="Nahrávání..." />
+		<string enum="EDITOR_NAME" value="Editor map Far Cry® 2" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Všechna práva vyhrazena. Far Cry®, Ubisoft a logo Ubisoft jsou registrované obchodní známky společnosti Ubisoft Entertainment ve Spojených státech a/nebo dalších zemích. Založeno na originálním Far Cry® společnosti Crytek, jehož výrobu vedl Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Načítání editoru map Far Cry® 2..." />	
+	</czech>
+	<german>
+		<string enum="LOADING_GAMEFILE" value="Lädt..." />	
+		<string enum="EDITOR_NAME" value="Far Cry® 2 Karten-Editor" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Alle Rechte vorbehalten. Far Cry®, Ubisoft und das Ubisoft-Logo sind Warenzeichen von Ubisoft Entertainment in den USA und/oder anderen Ländern. Basiert auf dem originalen Far Cry® von Crytek, unter Regie von Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Far Cry® 2 Karten-Editor wird geladen..." />	
+	</german>
+	<hungarian>
+		<string enum="LOADING_GAMEFILE" value="Töltés..." />
+		<string enum="EDITOR_NAME" value="Far Cry® 2 térképszerkesztő" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Minden jog nfenntartva. A Far Cry, A Ubisoft és a Ubisoft embléma a Ubisoft Entertainment védjegyei ez Egyesült Államokban és/vagy más országokban. Acrytek eredtei Far Cry® játéka alapján rendezte Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="A FarCry® 2 térképszerkesztő betöltése..." />	
+	</hungarian>
+	<italian>
+		<string enum="LOADING_GAMEFILE" value="Caricamento..." />
+		<string enum="EDITOR_NAME" value="Editor mappa Far Cry® 2" /> 
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Tutti i diritti riservati. Far Cry®, Ubisoft e il logo Ubisoft sono marchi di Ubisoft Entertainment negli Stati Uniti e/o negli altri paesi. Basato sull'originale Crytek's Far Cry® diretto da Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Caricamento dell'editor mappe di Far Cry® 2 in corso..." />	
+	</italian>
+	<japanese>
+		<string enum="LOADING_GAMEFILE" value="Loading..." />
+		<string enum="EDITOR_NAME" value="Far Cry® 2 マップエディター" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. All Rights Reserved. Far Cry®, Ubisoft and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries. Based on Crytek's original Far Cry® directed by Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Loading Far Cry® 2 Map Editor..." />	
+	</japanese>
+	<polish>
+		<string enum="LOADING_GAMEFILE" value="Wczytuję..." />
+		<string enum="EDITOR_NAME" value="Edytor map Far Cry® 2" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Wszelkie prawa zastrzeżone. Far Cry®, Ubisoft i logotyp Ubisoftu są znakami handlowymi Ubisoft Entertainment na terenie USA i/lub innych krajów. Oparto na pierwszej wersji Far Cry® firmy Crytek pod kierownictwem Cevata Yerli." />	
+		<string enum="LOADING_TITLE" value="Wczytywanie Edytora Map Far Cry® 2..." />	
+	</polish>
+	<russian>
+		<string enum="LOADING_GAMEFILE" value="Загрузка..." />
+		<string enum="EDITOR_NAME" value="Редактор карт Far Cry® 2" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Все права сохранены. Far Cry®, Ubisoft и логотип Ubisoft являются  товарными знаками Ubisoft Entertainment в США и/или других странах. Основано на Far Cry®, оригинальном продукте Crytek под руководством Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Загрузка редактора карт Far Cry® 2" />	
+	</russian>
+	<spanish>
+		<string enum="LOADING_GAMEFILE" value="Cargando..." />
+		<string enum="EDITOR_NAME" value="Editor de mapas de Far Cry® 2" />
+		<string enum="TEXT_LEGAL" value="© 2008 Ubisoft Entertainment. Todos los derechos reservados. Far Cry®, Ubisoft y el logotipo de Ubisoft son marcas comerciales de Ubisoft Entertainment en Estados Unidos y en otros países. Basado en el juego original Far Cry®, de Crytek, dirigido por Cevat Yerli." />	
+		<string enum="LOADING_TITLE" value="Cargando editor de mapas de Far Cry® 2..." />	
+	</spanish>
+</IGESplashLoc>
